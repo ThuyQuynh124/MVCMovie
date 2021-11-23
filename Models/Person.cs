@@ -1,15 +1,12 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-namespace MvcMovie.Models
-{
-    [Table("Person")]
-    public class Person
-    {
+namespace MvcMovie.Models{
+    [Table("People") ]
+    public class Person{
         [Key]
-        [Display(Name="ID")]
-        public String PersonID { get; set; }
-        [Display(Name="Họ và tên")]
-        public string PersonName { get; set; }
+        public int PersonID { get; set; }
+        public string FullName { get; set; }
     }
 }
+//dotnet-aspnet-codegenerator controller -name SanPhamsController -m SanPham -dc ApplicationDBContext --relativeFolderPath Controllers --useDefaultLayout --referenceScriptLibraries -sqlite

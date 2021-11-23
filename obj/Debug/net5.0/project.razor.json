@@ -15619,8 +15619,18 @@
   "RootNamespace": "MvcMovie",
   "Documents": [
     {
+      "FilePath": "c:\\DemoNetCore\\MvcMovie\\Views\\People\\Index.cshtml",
+      "TargetPath": "Views\\People\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\DemoNetCore\\MvcMovie\\Views\\Student\\Delete.cshtml",
       "TargetPath": "Views\\Student\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\DemoNetCore\\MvcMovie\\Views\\People\\Create.cshtml",
+      "TargetPath": "Views\\People\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15634,18 +15644,28 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\DemoNetCore\\MvcMovie\\Views\\Person\\Delete.cshtml",
-      "TargetPath": "Views\\Person\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\DemoNetCore\\MvcMovie\\Views\\Employee\\Delete.cshtml",
       "TargetPath": "Views\\Employee\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\DemoNetCore\\MvcMovie\\Views\\SanPhams\\Details.cshtml",
+      "TargetPath": "Views\\SanPhams\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\DemoNetCore\\MvcMovie\\Views\\YiYi\\Details.cshtml",
+      "TargetPath": "Views\\YiYi\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\DemoNetCore\\MvcMovie\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\DemoNetCore\\MvcMovie\\Views\\YiYi\\Delete.cshtml",
+      "TargetPath": "Views\\YiYi\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15656,6 +15676,21 @@
     {
       "FilePath": "c:\\DemoNetCore\\MvcMovie\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\DemoNetCore\\MvcMovie\\Views\\People\\Delete.cshtml",
+      "TargetPath": "Views\\People\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\DemoNetCore\\MvcMovie\\Views\\SanPhams\\Edit.cshtml",
+      "TargetPath": "Views\\SanPhams\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\DemoNetCore\\MvcMovie\\Views\\People\\Details.cshtml",
+      "TargetPath": "Views\\People\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15674,8 +15709,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\DemoNetCore\\MvcMovie\\Views\\Person\\Index.cshtml",
-      "TargetPath": "Views\\Person\\Index.cshtml",
+      "FilePath": "c:\\DemoNetCore\\MvcMovie\\Views\\LoaiSanPhams\\Delete.cshtml",
+      "TargetPath": "Views\\LoaiSanPhams\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15689,6 +15724,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\DemoNetCore\\MvcMovie\\Views\\YiYi\\Edit.cshtml",
+      "TargetPath": "Views\\YiYi\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\DemoNetCore\\MvcMovie\\Views\\Student\\Create.cshtml",
       "TargetPath": "Views\\Student\\Create.cshtml",
       "FileKind": "mvc"
@@ -15699,8 +15739,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\DemoNetCore\\MvcMovie\\Views\\Person\\Create.cshtml",
-      "TargetPath": "Views\\Person\\Create.cshtml",
+      "FilePath": "c:\\DemoNetCore\\MvcMovie\\Views\\YiYi\\Index.cshtml",
+      "TargetPath": "Views\\YiYi\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15709,8 +15749,28 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\DemoNetCore\\MvcMovie\\Views\\LoaiSanPhams\\Details.cshtml",
+      "TargetPath": "Views\\LoaiSanPhams\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\DemoNetCore\\MvcMovie\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\DemoNetCore\\MvcMovie\\Views\\LoaiSanPhams\\Edit.cshtml",
+      "TargetPath": "Views\\LoaiSanPhams\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\DemoNetCore\\MvcMovie\\Views\\LoaiSanPhams\\Create.cshtml",
+      "TargetPath": "Views\\LoaiSanPhams\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\DemoNetCore\\MvcMovie\\Views\\LoaiSanPhams\\Index.cshtml",
+      "TargetPath": "Views\\LoaiSanPhams\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15719,8 +15779,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\DemoNetCore\\MvcMovie\\Views\\Person\\Edit.cshtml",
-      "TargetPath": "Views\\Person\\Edit.cshtml",
+      "FilePath": "c:\\DemoNetCore\\MvcMovie\\Views\\SanPhams\\Create.cshtml",
+      "TargetPath": "Views\\SanPhams\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15739,13 +15799,28 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\DemoNetCore\\MvcMovie\\Views\\People\\Edit.cshtml",
+      "TargetPath": "Views\\People\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\DemoNetCore\\MvcMovie\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\DemoNetCore\\MvcMovie\\Views\\Person\\Details.cshtml",
-      "TargetPath": "Views\\Person\\Details.cshtml",
+      "FilePath": "c:\\DemoNetCore\\MvcMovie\\Views\\YiYi\\Create.cshtml",
+      "TargetPath": "Views\\YiYi\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\DemoNetCore\\MvcMovie\\Views\\SanPhams\\Index.cshtml",
+      "TargetPath": "Views\\SanPhams\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\DemoNetCore\\MvcMovie\\Views\\SanPhams\\Delete.cshtml",
+      "TargetPath": "Views\\SanPhams\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {

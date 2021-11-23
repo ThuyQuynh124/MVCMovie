@@ -31,17 +31,31 @@ namespace MvcMovie.Migrations
                     b.ToTable("Employee");
                 });
 
-            modelBuilder.Entity("MvcMovie.Models.Person", b =>
+            modelBuilder.Entity("MvcMovie.Models.LoaiSanPham", b =>
                 {
-                    b.Property<string>("PersonID")
+                    b.Property<string>("LoaiSanPhamID")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("PersonName")
+                    b.Property<string>("LoaiSanPhamName")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("LoaiSanPhamID");
+
+                    b.ToTable("LoaiSanPhams");
+                });
+
+            modelBuilder.Entity("MvcMovie.Models.Person", b =>
+                {
+                    b.Property<int>("PersonID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("FullName")
                         .HasColumnType("TEXT");
 
                     b.HasKey("PersonID");
 
-                    b.ToTable("Person");
+                    b.ToTable("People");
                 });
 
             modelBuilder.Entity("MvcMovie.Models.Product", b =>
@@ -63,6 +77,25 @@ namespace MvcMovie.Migrations
                     b.ToTable("Product");
                 });
 
+            modelBuilder.Entity("MvcMovie.Models.SanPham", b =>
+                {
+                    b.Property<int>("SanPhamID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("LoaiSanPhamID")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("SanPhamName")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("SanPhamID");
+
+                    b.HasIndex("LoaiSanPhamID");
+
+                    b.ToTable("SanPhams");
+                });
+
             modelBuilder.Entity("MvcMovie.Models.Student", b =>
                 {
                     b.Property<string>("StudenID")
@@ -77,6 +110,42 @@ namespace MvcMovie.Migrations
                     b.HasKey("StudenID");
 
                     b.ToTable("Students");
+                });
+
+            modelBuilder.Entity("MvcMovie.Models.YoYo", b =>
+                {
+                    b.HasBaseType("MvcMovie.Models.Person");
+
+                    b.Property<int>("IDYoYo")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("UniversityYoYo")
+                        .HasColumnType("TEXT");
+
+                    b.ToTable("YaYa");
+                });
+
+            modelBuilder.Entity("MvcMovie.Models.SanPham", b =>
+                {
+                    b.HasOne("MvcMovie.Models.LoaiSanPham", "LoaiSanPham")
+                        .WithMany("SanPhams")
+                        .HasForeignKey("LoaiSanPhamID");
+
+                    b.Navigation("LoaiSanPham");
+                });
+
+            modelBuilder.Entity("MvcMovie.Models.YoYo", b =>
+                {
+                    b.HasOne("MvcMovie.Models.Person", null)
+                        .WithOne()
+                        .HasForeignKey("MvcMovie.Models.YoYo", "PersonID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("MvcMovie.Models.LoaiSanPham", b =>
+                {
+                    b.Navigation("SanPhams");
                 });
 #pragma warning restore 612, 618
         }
