@@ -26,5 +26,7 @@ namespace MvcMovie.Data {
 
         public DbSet<MvcMovie.Models.SanPham> SanPham { get; set; }
 
+        public DbSet<MvcMovie.Models.Movie> Movie { get; set; }
+
     }
 }
