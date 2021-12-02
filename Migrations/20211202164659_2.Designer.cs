@@ -9,8 +9,8 @@ using MvcMovie.Data;
 namespace MvcMovie.Migrations
 {
     [DbContext(typeof(ApplicationDBContext))]
-    [Migration("20211202093455_Create_Table5")]
-    partial class Create_Table5
+    [Migration("20211202164659_2")]
+    partial class _2
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

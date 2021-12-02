@@ -38,9 +38,9 @@ namespace MvcMovie.Controllers
 
         if (!string.IsNullOrEmpty(EmployGenre))
         {
-            employees = employees.Where(x => x.EmployeeID == EmployGenre);
+            employees = employees.Where(x => x.EmployName == EmployGenre);
         }
-
+//ô tìm kiếm à uh trc cái bảng employee vẫn chạy đc ý bh lại báo ko có table
         var EmployGenreVM = new EmployGenreViewModel
         {
             Genres = new SelectList(await genreQuery.Distinct().ToListAsync()),

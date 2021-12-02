@@ -7,7 +7,7 @@ namespace MvcMovie.Models
     {
         public List<Employee> Employees { get; set; }
         public SelectList Genres { get; set; }
-        public string EmployGenre { get; set; }
+        public string EmployGenre { get; set; } 
         public string SearchString { get; set; }
     }
 }
