@@ -20,33 +20,57 @@ namespace MvcMovie.Controllers
         }
 
         // GET: Employee
-        public async Task<IActionResult> Index()
+      
+    public async Task<IActionResult> Index(string EmployGenre, string searchString)
+    {
+        // Use LINQ to get list of genres.
+        IQueryable<string> genreQuery = from m in _context.Employee
+                                        orderby m.EmployName
+                                        select m.EmployeeID;
+
+        var employees = from m in _context.Employee
+                    select m;
+
+        if (!string.IsNullOrEmpty(searchString))
         {
-            return View(await _context.Employee.ToListAsync());
+            employees = employees.Where(s => s.EmployName.Contains(searchString));
         }
 
-        // GET: Employee/Details/5
-        public async Task<IActionResult> Details(string id)
+        if (!string.IsNullOrEmpty(EmployGenre))
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var employee = await _context.Employee
-                .FirstOrDefaultAsync(m => m.EmployeeID == id);
-            if (employee == null)
-            {
-                return NotFound();
-            }
-
-            return View(employee);
+            employees = employees.Where(x => x.EmployeeID == EmployGenre);
         }
 
-        // GET: Employee/Create
-        public IActionResult Create()
+        var EmployGenreVM = new EmployGenreViewModel
         {
-            return View();
+            Genres = new SelectList(await genreQuery.Distinct().ToListAsync()),
+            Employees = await employees.ToListAsync()
+        };
+
+        return View(EmployGenreVM);
+    }
+            // GET: Employee/Details/5
+            public async Task<IActionResult> Details(string id)
+            {
+                if (id == null)
+                {
+                    return NotFound();
+                }
+
+                var employee = await _context.Employee
+                    .FirstOrDefaultAsync(m => m.EmployeeID == id);
+                if (employee == null)
+                {
+                    return NotFound();
+                }
+
+                return View(employee);
+            }
+
+            // GET: Employee/Create
+            public IActionResult Create()
+            {
+                return View();
         }
 
         // POST: Employee/Create
