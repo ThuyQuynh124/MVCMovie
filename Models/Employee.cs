@@ -13,5 +13,6 @@ namespace MvcMovie.Models
         public string EmployName { get; set; }
         [Display(Name="Số điện thoại")]
         public string PhoneNumber { get; set; }
+        public string Rating { get; set; }
     }
 }

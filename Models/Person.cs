@@ -9,4 +9,3 @@ namespace MvcMovie.Models{
         public string FullName { get; set; }
     }
 }
-//dotnet-aspnet-codegenerator controller -name SanPhamsController -m SanPham -dc ApplicationDBContext --relativeFolderPath Controllers --useDefaultLayout --referenceScriptLibraries -sqlite
